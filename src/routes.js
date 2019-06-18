@@ -1,8 +1,8 @@
-import { createStackNavigator } from 'react-navigation';
+import { createAppContainer, createStackNavigator } from 'react-navigation';
 
 import Main from './pages/main';
 
-export default createStackNavigator({
+const RootStack =  createStackNavigator({
   Main
 },
 {
@@ -13,3 +13,7 @@ export default createStackNavigator({
     headerTintColor: "#FFF"
   },
 });
+
+const AppNav = createAppContainer(RootStack);
+
+export default AppNav;
