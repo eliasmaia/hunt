@@ -11,6 +11,6 @@ export default class Main extends Component {
         <View>
           <Text>Página Main</Text>
         </View>
-      )
+      );
   }
 }
